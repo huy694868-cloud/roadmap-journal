@@ -1,16 +1,22 @@
 # Temperature Classifier
-
 ## Purpose
-A program to identify temperature(C) and classify
-
+A program reads a temperature in degrees Celsius and classifies it.
 ## Requirements
-Python 3
-
+Python 3 is required.
 ## How to run
-Use py. temperature.py
+Run the following command in the project directory:
 
+```powershell
+python temperature.py
+```
+
+Enter a numeric temperature when prompted.
 ## Classification rules
-There 3 allowed levels: Cold(<20 C), Comfortable(20<30 C), Hot(>30 C)
-
+The valid temperature range is: -40°C to 125°C, inclusive.
+- Cold: below 20°C within the valid range.
+- Comfortable: From 20°C to 30°C within the valid range.
+- Hot: Above 30°C within the valid range.
+- Invalid: out of valid temperature range.
 ## Limitation
-typing letter like abc will lead to error when change to float,this program only work with input as number 
+Entering non-numeric text, such as "abc", causes an error during conversation to float.
+The program currently expects numeric input.
